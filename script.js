@@ -17,8 +17,11 @@ function updateCharts() {
                     // Get the necessary data from the response objects
                     const erdoganAA = resultData.aa_data.CB.YurtIciDisi.c[0].r;
                     const kilicdarogluAA = resultData.aa_data.CB.YurtIciDisi.c[1].r;
-                    const kilicdarogluAnka = resultData.anka_data.Sonuclar[0].ITOyOrani;
-                    const erdoganAnka = resultData.anka_data.Sonuclar[1].ITOyOrani;
+                    const erdoganAnka = resultData.anka_data.Sonuclar[0].ITOyOrani;
+                    if (resultData.anka_data.Sonuclar[0].Adi != "Recep Tayyip Erdoğan") {
+                        const erdoganAnka = resultData.anka_data.Sonuclar[1].ITOyOrani;
+                        const kilicdarogluAnka = resultData.anka_data.Sonuclar[0].ITOyOrani;
+                    }
 
                     // Update the chart elements with the data
                     updateChart("chart1", "Recep Tayyip Erdoğan", erdoganAA, "Anadolu Ajansı");
