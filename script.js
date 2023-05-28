@@ -63,5 +63,5 @@ function updateChart(chartId, candidateName, votePercentage, source) {
     });
 }
 
-// Update the charts every 10 seconds
-setInterval(updateCharts, 10000);
+// Update the charts every 3 seconds
+setInterval(updateCharts, 3000);
