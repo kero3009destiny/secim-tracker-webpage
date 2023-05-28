@@ -25,7 +25,7 @@ function updateCharts() {
                     updateChart("chart2", "Recep Tayyip Erdoğan", erdoganAnka, "Anka Haber Ajansı");
                     document.getElementById("update-time").innerText = "Güncelleme zamanı: " + current_time_string;
                     document.getElementById("aa-source").innerText = kilicdarogluAA + " / " + erdoganAA;
-                    document.getElementById("anka-source").innerText = kilicdarogluAnka + " / " + erdoganAA;
+                    document.getElementById("anka-source").innerText = kilicdarogluAnka + " / " + erdoganAnka;
             
         });
 }
