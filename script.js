@@ -18,6 +18,7 @@ function updateCharts() {
                     const erdoganAA = resultData.aa_data.CB.YurtIciDisi.c[0].r;
                     const kilicdarogluAA = resultData.aa_data.CB.YurtIciDisi.c[1].r;
                     const erdoganAnka = resultData.anka_data.Sonuclar[0].ITOyOrani;
+                    const kilicdarogluAnka = resultData.anka_data.Sonuclar[1].ITOyOrani;
                     if (resultData.anka_data.Sonuclar[0].Adi != "Recep Tayyip Erdoğan") {
                         const erdoganAnka = resultData.anka_data.Sonuclar[1].ITOyOrani;
                         const kilicdarogluAnka = resultData.anka_data.Sonuclar[0].ITOyOrani;
